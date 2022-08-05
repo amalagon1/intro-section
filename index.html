@@ -1,39 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
 </head>
+
 <body>
+  <div class="backdrop"></div>
+  <header>
+    <div class="main-nav">
+      <div class="main-nav__items">
+        <div class="logo">
+          <img src="./images/logo.svg">
+        </div>
+        <ul class="main-nav__links">
+          <li>
+            <a>Features</a>
+            <img src="./images/icon-arrow-down.svg">
+          </li>
+          <li>
+            <a>Company</a>
+            <img src="./images/icon-arrow-down.svg">
+          </li>
+          <li><a>Careers</a></li>
+          <li><a>About</a></li>
+        </ul>
+        <div class="main-btn">
+          <button class="nav-btn nav-btn1">Login</button>
+          <button class="nav-btn">Register</button>
+        </div>
 
-  Features
-  Company
-  Careers
-  About
+      </div>
 
-  Login
-  Register
+    </div>
+    <div class="mobile-nav">
+      <img src="./images/logo.svg">
+      <button class='burger'>
+        <span class='burger-line'></span>
+        <span class='burger-line'></span>
+        <span class='burger-line'></span>
+      </button>
+    </div>
+    <div class="side-nav">
+      <img src="./images/icon-close-menu.svg" id="close">
+      <ul class="side-nav__items">
+        <li class="side-nav__item">
+          <a id="features-drop">Features<span> <img class="arrow-down" id="features-active"
+                src="./images/icon-arrow-down.svg"></span></a>
 
-  Make remote work
+          <img class="arrow-up" id="up" src="./images/icon-arrow-up.svg">
+          <div class="dropdown features-drop">
+            <a><span><img src="./images/icon-todo.svg"></span> Todo list</a>
+            <a><span><img src="./images/icon-calendar.svg"></span>Calendar</a>
+            <a><span><img src="./images/icon-reminders.svg"></span>Reminders</a>
+            <a><span><img src="./images/icon-planning.svg"></span>Planning</a>
+          </div>
+        </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+        <li class="side-nav__item">
+          <a id="company-drop">Company<span><img class="down-arrow" id="features-close"
+                src="./images/icon-arrow-down.svg"></span></a>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        </li>
+        <li class=" dropdown dropdown2" id="company-drop">
+          <a>History</a>
+          <a>Our Team</a>
+          <a>Blog</a>
+        </li>
+        <li class="side-nav__item">
+          <a>Careers</a>
+        </li>
+        <li class="side-nav__item">
+          <a>About</a>
+        </li>
+        <div class="buttons">
+          <button class="learn"> Login </button>
+          <button class="learn"> Register</button>
+        </div>
+      </ul>
+
+
+
+    </div>
+
+
+  </header>
+
+  <main>
+
+
+    <div class="hero-container">
+    </div>
+    <section class="mission-statement">
+      <h1>Make remote work</h1>
+
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+
+      <button class="learn">Learn more</button>
+      <div class="icons">
+        <img src="./images/client-audiophile.svg">
+        <img src="./images/client-databiz.svg">
+        <img src="./images/client-maker.svg">
+        <img src="./images/client-meet.svg">
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script src="script.js"></script>
 </body>
+
 </html>
