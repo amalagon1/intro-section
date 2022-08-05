@@ -39,7 +39,7 @@ body {
 .main-nav__links {
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 45%;
     list-style: none;
 }
 .main-nav__items {
@@ -160,8 +160,15 @@ body {
       
   }
 
-  .dropdown {
+  .main-drop {
+      display: none;
+  }
+
+  .main-nav__links li:hover .dropdown{
       display: flex;
+  }
+  .dropdown {
+      display: none;
       flex-direction: column;
       margin-left: 40px;
       margin-top: 15px;
