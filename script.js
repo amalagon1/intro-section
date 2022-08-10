@@ -2,9 +2,9 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.side-nav');
 const closeBtn = document.getElementById('close');
 const features = document.querySelector("#features-drop");
-const company = document.querySelector('#company-drop');
+const company = document.querySelector('#company-features');
 const activeBtn = document.querySelector(".arrow-down");
-const activeBtn2 = document.querySelector('.down-arrow');
+// const activeBtn2 = document.querySelector('.down-arrow');
 const featuresD = document.querySelector(".features-drop");
 const dropdown = document.querySelector('.dropdown');
 const upArrow = document.querySelector('.arrow-up');
@@ -39,11 +39,13 @@ features.addEventListener('click', (e) => {
     console.log('you clicked me')
     if (featuresD.style.display == 'none') {
         featuresD.style.display = 'flex';
+
     } else {
         featuresD.style.display = 'none';
     }
     // featuresD.classList.add('open');
-    // activeBtn.classList.add('active');
+    activeBtn.classList.add('active');
+
 
     // closeDropdown()
 })
@@ -52,7 +54,7 @@ company.addEventListener('click', (e) => {
     console.log('you clicked me')
     if (companyDropEl.style.display == 'none') {
         companyDropEl.style.display = 'flex';
-        activeBtn2.classList.add('active');
+        activeBtn.classList.add('active');
     } else {
         companyDropEl.style.display = 'none';
         // activeBtn2.classList.remove('active');
@@ -63,19 +65,19 @@ company.addEventListener('click', (e) => {
     // closeDropdown()
 })
 
-company.addEventListener('click', () => {
-    console.log('clicked!');
-    companyDropEl.classList.add('open');
-    activeBtn2.classList.add('active');
+// company.addEventListener('click', () => {
+//     console.log('clicked!');
+//     companyDropEl.classList.add('open');
+//     activeBtn.classList.add('active');
 
-})
+// })
 
-function closeDropdown() {
-    if (active) {
-        activeBtn.addEventListener('click', () => {
-            console.log('clicked again!')
-            activeBtn.classList.remove('active');
-        })
-    }
-}
+// function closeDropdown() {
+//     if (active) {
+//         activeBtn.addEventListener('click', () => {
+//             console.log('clicked again!')
+//             activeBtn.classList.remove('active');
+//         })
+//     }
+// }
 
